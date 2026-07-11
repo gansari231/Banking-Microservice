@@ -3,6 +3,7 @@ package com.bank.customer.service.impl;
 import com.bank.customer.dto.CustomerRequest;
 import com.bank.customer.dto.CustomerResponse;
 import com.bank.customer.entity.Customer;
+import com.bank.customer.exception.CustomerAlreadyExistsException;
 import com.bank.customer.mapper.CustomerMapper;
 import com.bank.customer.repository.CustomerRepository;
 import com.bank.customer.service.CustomerService;
@@ -20,6 +21,11 @@ public class CustomerServiceImpl implements CustomerService {
 
     @Override
     public CustomerResponse createCustomer(CustomerRequest request) {
+
+        customerRepository.findByEmail(request.getEmail())
+                .ifPresent(customer -> {
+                    throw new CustomerAlreadyExistsException("Customer with email " + request.getEmail() + " already exists.");
+        });
 
         Customer customer = CustomerMapper.toEntity(request);
         Customer savedCustomer = customerRepository.save(customer);
