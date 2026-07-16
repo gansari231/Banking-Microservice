@@ -19,4 +19,5 @@ public class CustomerRequest {
 
     @NotBlank(message = "Phone number is required")
     private String phone;
+
 }
