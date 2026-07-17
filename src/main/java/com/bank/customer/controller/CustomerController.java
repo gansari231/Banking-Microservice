@@ -3,9 +3,9 @@ package com.bank.customer.controller;
 import com.bank.customer.dto.CustomerPatchRequest;
 import com.bank.customer.dto.CustomerRequest;
 import com.bank.customer.dto.CustomerResponse;
-import com.bank.customer.entity.Customer;
 import com.bank.customer.service.CustomerService;
 import jakarta.validation.Valid;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -53,6 +53,12 @@ public class CustomerController {
             @Valid @RequestBody CustomerPatchRequest request) {
 
         return customerService.patchCustomer(id, request);
+    }
 
+    @DeleteMapping("/{id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void deleteCustomer(@PathVariable Long id) {
+
+        customerService.deleteCustomer(id);
     }
 }

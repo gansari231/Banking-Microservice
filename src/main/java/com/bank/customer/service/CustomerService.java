@@ -13,4 +13,6 @@ public interface CustomerService {
     CustomerResponse getCustomerById(Long id);
     CustomerResponse updateCustomer(Long id, CustomerRequest request);
     CustomerResponse patchCustomer(Long id, CustomerPatchRequest request);
+    void deleteCustomer(Long id);
+
 }

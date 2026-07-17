@@ -114,4 +114,16 @@ public class CustomerServiceImpl implements CustomerService {
 
         return CustomerMapper.toResponse(updatedCustomer);
     }
+
+    @Override
+    public void deleteCustomer(Long id) {
+
+        Customer customer = customerRepository.findById(id)
+                .orElseThrow(() ->
+                        new CustomerNotFoundException(
+                                "Customer not found with id: " + id));
+
+        customerRepository.delete(customer);
+
+    }
 }
