@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BackgroundAgentGlobalSettings">
+    <option name="selectedModelId" value="auto" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ef29304e-ea74-41d4-86af-9fa65441aef5" name="Changes" comment="Implemented DELETE customer endpoint">
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bank/customer/CustomerServiceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bank/customer/controller/CustomerController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bank/customer/dto/CustomerPatchRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bank/customer/dto/CustomerRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bank/customer/dto/CustomerResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bank/customer/dto/ErrorResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bank/customer/dto/ValidationErrorResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bank/customer/entity/Customer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bank/customer/exception/CustomerAlreadyExistsException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bank/customer/exception/CustomerNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bank/customer/exception/GlobalExceptionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bank/customer/mapper/CustomerMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bank/customer/repository/CustomerRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bank/customer/service/CustomerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bank/customer/service/impl/CustomerServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/bank/customer/CustomerServiceApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_D:/Java/banking-microservice" value="3GdWqfrOyVMzNcT5su9k21sWUbn" />
+      <entry key="_D:/Java/customer-service" value="3FyBlECLJbdhaF1VTiD1xkXhUNa" />
+    </persistenceIdMap>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;gansari231&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/gansari231/customer-service.git&quot;,
+    &quot;accountId&quot;: &quot;21503b93-73fc-4438-997b-d2941a97001d&quot;
+  }
+}</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0000355448482199" />
+      <entry key="MS500" value="1.1288710398493487" />
+      <entry key="S2" value="1.5991545106697094" />
+      <entry key="S5" value="1.8147334238280726" />
+      <entry key="S10" value="1.9026258498401876" />
+      <entry key="S30" value="1.9693892417960357" />
+      <entry key="S60" value="2.1269652940499757" />
+      <entry key="M2" value="2.9949604994406385" />
+      <entry key="M5" value="5.215005359758421" />
+      <entry key="M10" value="6.74472468097703" />
+      <entry key="M15" value="7.401553463799902" />
+      <entry key="M30" value="8.149576935545639" />
+      <entry key="H1" value="8.698434231805287" />
+      <entry key="H2" value="11.563135368153214" />
+      <entry key="H4" value="24.37663972753914" />
+      <entry key="D1" value="92.52637225477555" />
+      <entry key="W1" value="123.6848825616217" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="3.1134426296845906E-283" />
+      <entry key="S60" value="1.0829465109777433E-141" />
+      <entry key="M2" value="6.879699847319643E-71" />
+      <entry key="M5" value="2.69799996853463E-28" />
+      <entry key="M10" value="4.982853640819855E-14" />
+      <entry key="M15" value="3.0463300020959365E-9" />
+      <entry key="M30" value="2.246778482317821E-4" />
+      <entry key="H1" value="0.07277600385648754" />
+      <entry key="H2" value="1.5681596925191634" />
+      <entry key="H4" value="9.245665991357761" />
+      <entry key="D1" value="53.16490657782795" />
+      <entry key="W1" value="73.79593397324247" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.9330668529098562" />
+      <entry key="MS500" value="1.1138592202067585" />
+      <entry key="S2" value="1.5942429773400852" />
+      <entry key="S5" value="1.8125578511714633" />
+      <entry key="S10" value="1.9014950922683425" />
+      <entry key="S30" value="1.9690013373136972" />
+      <entry key="S60" value="2.1267558701285307" />
+      <entry key="M2" value="2.9948122713177447" />
+      <entry key="M5" value="5.214901404205094" />
+      <entry key="M10" value="6.744657297719446" />
+      <entry key="M15" value="7.401504133118319" />
+      <entry key="M30" value="8.149773939904133" />
+      <entry key="H1" value="8.771125115210488" />
+      <entry key="H2" value="13.130593014010843" />
+      <entry key="H4" value="33.620378782293905" />
+      <entry key="D1" value="145.68952937804247" />
+      <entry key="W1" value="197.48047238984415" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3FyBlECLJbdhaF1VTiD1xkXhUNa" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectSessionTemplates">
+    <option name="panelTemplate">
+      <template>
+        <option name="modeId" value="Agent" />
+        <option name="model">
+          <model>
+            <option name="modelType" value="builtin_id" />
+            <option name="modelValue" value="auto" />
+          </model>
+        </option>
+        <option name="targetType" value="BACKGROUND" />
+        <option name="worktreeMode" value="WORKSPACE" />
+      </template>
+    </option>
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "Spring Boot.CustomerServiceApplication.executor": "Run",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "copilot.chat.legacySessionMetadata.migrated": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Java/banking-microservice",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Java\banking-microservice\customer-service" />
+      <recent name="D:\Java\customer-service\customer-service" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="banking-microservice" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="banking-microservice" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+    <configuration name="CustomerServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
+      <module name="customer-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bank.customer.CustomerServiceApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bank.customer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.CustomerServiceApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.26222.65" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.26222.65" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ef29304e-ea74-41d4-86af-9fa65441aef5" name="Changes" comment="" />
+      <created>1783037577742</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1783037577742</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Refactored customer-service made use DTOs and mapper for customer API&quot;">
+      <option name="closed" value="true" />
+      <created>1783749933393</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1783749933393</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added global exception handling and duplicate email validation for customer service">
+      <option name="closed" value="true" />
+      <created>1783752054409</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1783752054409</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added global exception handling and duplicate email validation for customer service">
+      <option name="closed" value="true" />
+      <created>1783752066372</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1783752066372</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Implemented get customer by id endpoint, error handling if customer not exists">
+      <option name="closed" value="true" />
+      <created>1784210255557</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1784210255558</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Implemented partial customer updates using PATCH and PUT Mappings">
+      <option name="closed" value="true" />
+      <created>1784300853449</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1784300853449</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Implemented DELETE customer endpoint">
+      <option name="closed" value="true" />
+      <created>1784301182582</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1784301182582</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Refactored customer-service made use DTOs and mapper for customer API&quot;" />
+    <MESSAGE value="Added global exception handling and duplicate email validation for customer service" />
+    <MESSAGE value="Implemented get customer by id endpoint, error handling if customer not exists" />
+    <MESSAGE value="Implemented partial customer updates using PATCH and PUT Mappings" />
+    <MESSAGE value="Implemented DELETE customer endpoint" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented DELETE customer endpoint" />
+  </component>
+</project>
