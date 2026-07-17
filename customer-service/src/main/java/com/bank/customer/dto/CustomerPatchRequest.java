@@ -14,5 +14,4 @@ public class CustomerPatchRequest {
     private String phone;
 
     private String address;
-
 }

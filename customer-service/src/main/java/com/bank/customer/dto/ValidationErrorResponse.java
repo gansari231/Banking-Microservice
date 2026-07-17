@@ -17,5 +17,4 @@ public class ValidationErrorResponse{
     private String error;
 
     private List<String> messages;
-
 }

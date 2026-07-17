@@ -4,14 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="BackgroundAgentGlobalSettings">
-    <option name="selectedModelId" value="auto" />
+    <option name="selectedModelId" value="meta/llama-3.3-70b-instruct" />
+    <option name="selectedProviderName" value="d9d4d814-08c2-4ecb-88a2-cf76b8bb6280" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef29304e-ea74-41d4-86af-9fa65441aef5" name="Changes" comment="Moved all customer service files into a different directory with all working endpoints, created account service project with necessary files required">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="ef29304e-ea74-41d4-86af-9fa65441aef5" name="Changes" comment="Initialized account service with account entity">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/bank/account/AccountServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/bank/account/AccountServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/bank/account/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/bank/account/service/AccountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/bank/customer/CustomerServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/bank/customer/CustomerServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/bank/customer/dto/CustomerPatchRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/bank/customer/dto/CustomerPatchRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/bank/customer/dto/CustomerRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/bank/customer/dto/CustomerRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/bank/customer/dto/CustomerResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/bank/customer/dto/CustomerResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/bank/customer/dto/ErrorResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/bank/customer/dto/ErrorResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/bank/customer/dto/ValidationErrorResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/bank/customer/dto/ValidationErrorResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/bank/customer/service/impl/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/bank/customer/service/impl/CustomerServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +35,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Exception" />
         <option value="Class" />
       </list>
     </option>
@@ -60,61 +68,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000569478144248" />
-      <entry key="MS500" value="1.1416104856619749" />
-      <entry key="S2" value="1.613442488626902" />
-      <entry key="S5" value="1.8224500687124643" />
-      <entry key="S10" value="1.906890328933143" />
-      <entry key="S30" value="1.9679470268937374" />
-      <entry key="S60" value="1.9838429889437323" />
-      <entry key="M2" value="1.9918885970428999" />
-      <entry key="M5" value="1.9967475096700644" />
-      <entry key="M10" value="1.9985277567751307" />
-      <entry key="M15" value="2.010020985138859" />
-      <entry key="M30" value="2.824049331906492" />
-      <entry key="H1" value="9.200655800742284" />
-      <entry key="H2" value="24.19275541371672" />
-      <entry key="H4" value="47.547849018775736" />
-      <entry key="D1" value="135.79899609004383" />
-      <entry key="W1" value="177.3912619605111" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0000000422630237" />
+      <entry key="S10" value="1.000345189560578" />
+      <entry key="S30" value="1.1769092914182429" />
+      <entry key="S60" value="1.9683464358413272" />
+      <entry key="M2" value="3.5150040202973925" />
+      <entry key="M5" value="6.938008589841518" />
+      <entry key="M10" value="11.159201287871813" />
+      <entry key="M15" value="14.061001561330631" />
+      <entry key="M30" value="19.04345304719674" />
+      <entry key="H1" value="26.492928148398114" />
+      <entry key="H2" value="41.45411596510071" />
+      <entry key="H4" value="65.54477469307795" />
+      <entry key="D1" value="157.63475041880025" />
+      <entry key="W1" value="201.80342508693323" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="0.0" />
-      <entry key="S5" value="0.0" />
-      <entry key="S10" value="0.0" />
-      <entry key="S30" value="0.0" />
-      <entry key="S60" value="8.455606017861349E-199" />
-      <entry key="M2" value="1.9223760948862897E-99" />
-      <entry key="M5" value="1.0222320348624761E-39" />
-      <entry key="M10" value="9.699110435280899E-20" />
-      <entry key="M15" value="4.749116207010719E-13" />
-      <entry key="M30" value="2.8052926920502462E-6" />
-      <entry key="H1" value="0.008131996198206462" />
-      <entry key="H2" value="0.5241972856608776" />
-      <entry key="H4" value="5.34552593089316" />
-      <entry key="D1" value="48.525173308909686" />
-      <entry key="W1" value="72.83950919332626" />
+      <entry key="MS100" value="7.494416515917392E-86" />
+      <entry key="MS500" value="9.439470360435788E-18" />
+      <entry key="S2" value="5.650601813892315E-5" />
+      <entry key="S5" value="0.023938881337796127" />
+      <entry key="S10" value="0.20488872809200354" />
+      <entry key="S30" value="0.9446281803736714" />
+      <entry key="S60" value="1.6540945077220413" />
+      <entry key="M2" value="2.9396680787018004" />
+      <entry key="M5" value="6.5741212919218" />
+      <entry key="M10" value="10.956433421067139" />
+      <entry key="M15" value="13.629170147615909" />
+      <entry key="M30" value="17.441446618234036" />
+      <entry key="H1" value="19.95730461428714" />
+      <entry key="H2" value="21.80329731085132" />
+      <entry key="H4" value="26.86037925405231" />
+      <entry key="D1" value="70.32112962639444" />
+      <entry key="W1" value="95.58904139296573" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.014988517946211168" />
-      <entry key="MS500" value="0.4592925146329456" />
-      <entry key="S2" value="1.2182425518369862" />
-      <entry key="S5" value="1.6178586616059727" />
-      <entry key="S10" value="1.794590140489612" />
-      <entry key="S30" value="1.9280313766677626" />
-      <entry key="S60" value="1.963557218030154" />
-      <entry key="M2" value="1.9816623410008773" />
-      <entry key="M5" value="1.9926368185673378" />
-      <entry key="M10" value="1.996469027378195" />
-      <entry key="M15" value="2.0086475686176777" />
-      <entry key="M30" value="2.823358703583519" />
-      <entry key="H1" value="9.20840876565307" />
-      <entry key="H2" value="24.716508270414888" />
-      <entry key="H4" value="52.892142480468806" />
-      <entry key="D1" value="184.3225498291128" />
-      <entry key="W1" value="250.23042811646508" />
+      <entry key="MS100" value="0.6461764153187461" />
+      <entry key="MS500" value="0.9163686446753513" />
+      <entry key="S2" value="0.9784510082182653" />
+      <entry key="S5" value="1.0133941686995616" />
+      <entry key="S10" value="1.1908499630089175" />
+      <entry key="S30" value="2.0790394963435057" />
+      <entry key="S60" value="3.5409216265303116" />
+      <entry key="M2" value="6.357533452183929" />
+      <entry key="M5" value="13.42657498969925" />
+      <entry key="M10" value="22.04989122455319" />
+      <entry key="M15" value="27.637733879685964" />
+      <entry key="M30" value="36.452772695359634" />
+      <entry key="H1" value="46.43224508481956" />
+      <entry key="H2" value="63.24767503425005" />
+      <entry key="H4" value="92.39923907520692" />
+      <entry key="D1" value="227.95347019983367" />
+      <entry key="W1" value="297.39200605957825" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -163,7 +171,8 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm"
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.github.copilot.settings.ApplicationConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -291,7 +300,15 @@
       <option name="project" value="LOCAL" />
       <updated>1784303148899</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Initialized account service with account entity">
+      <option name="closed" value="true" />
+      <created>1784314840739</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1784314840739</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -304,6 +321,7 @@
     <MESSAGE value="Implemented partial customer updates using PATCH and PUT Mappings" />
     <MESSAGE value="Implemented DELETE customer endpoint" />
     <MESSAGE value="Moved all customer service files into a different directory with all working endpoints, created account service project with necessary files required" />
-    <option name="LAST_COMMIT_MESSAGE" value="Moved all customer service files into a different directory with all working endpoints, created account service project with necessary files required" />
+    <MESSAGE value="Initialized account service with account entity" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initialized account service with account entity" />
   </component>
 </project>

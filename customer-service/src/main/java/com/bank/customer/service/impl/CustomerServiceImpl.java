@@ -1,11 +1,8 @@
 package com.bank.customer.service.impl;
 
-import com.bank.customer.dto.CustomerPatchRequest;
-import com.bank.customer.dto.CustomerRequest;
-import com.bank.customer.dto.CustomerResponse;
+import com.bank.customer.dto.*;
 import com.bank.customer.entity.Customer;
-import com.bank.customer.exception.CustomerAlreadyExistsException;
-import com.bank.customer.exception.CustomerNotFoundException;
+import com.bank.customer.exception.*;
 import com.bank.customer.mapper.CustomerMapper;
 import com.bank.customer.repository.CustomerRepository;
 import com.bank.customer.service.CustomerService;
@@ -124,6 +121,5 @@ public class CustomerServiceImpl implements CustomerService {
                                 "Customer not found with id: " + id));
 
         customerRepository.delete(customer);
-
     }
 }
