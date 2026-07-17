@@ -1,5 +1,6 @@
 package com.bank.customer.controller;
 
+import com.bank.customer.dto.CustomerPatchRequest;
 import com.bank.customer.dto.CustomerRequest;
 import com.bank.customer.dto.CustomerResponse;
 import com.bank.customer.entity.Customer;
@@ -36,5 +37,22 @@ public class CustomerController {
     public CustomerResponse getCustomerById(@PathVariable Long id) {
 
         return customerService.getCustomerById(id);
+    }
+
+    @PutMapping("/{id}")
+    public CustomerResponse updateCustomer(
+            @PathVariable Long id,
+            @Valid @RequestBody CustomerRequest request) {
+
+        return customerService.updateCustomer(id, request);
+    }
+
+    @PatchMapping("/{id}")
+    public CustomerResponse patchCustomer(
+            @PathVariable Long id,
+            @Valid @RequestBody CustomerPatchRequest request) {
+
+        return customerService.patchCustomer(id, request);
+
     }
 }
