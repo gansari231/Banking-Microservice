@@ -8,11 +8,11 @@
     <option name="selectedProviderName" value="d9d4d814-08c2-4ecb-88a2-cf76b8bb6280" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef29304e-ea74-41d4-86af-9fa65441aef5" name="Changes" comment="Implemented account CRUD and customer account lookup">
+    <list default="true" id="ef29304e-ea74-41d4-86af-9fa65441aef5" name="Changes" comment="Implemented validation and exception handling for Account Service">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/bank/account/dto/AccountRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/bank/account/dto/AccountRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/bank/account/service/impl/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/bank/account/service/impl/AccountServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,59 +77,59 @@
     <decayedCancelled>
       <entry key="MS100" value="1.0" />
       <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0" />
-      <entry key="S10" value="1.0000000165493097" />
-      <entry key="S30" value="1.0055868299812392" />
-      <entry key="S60" value="1.1655063592709294" />
-      <entry key="M2" value="2.1228824225248397" />
-      <entry key="M5" value="5.723282122416346" />
-      <entry key="M10" value="10.563118068963997" />
-      <entry key="M15" value="13.981328277279934" />
-      <entry key="M30" value="19.91787298409034" />
-      <entry key="H1" value="28.015137342562983" />
-      <entry key="H2" value="43.31187760661779" />
-      <entry key="H4" value="67.65092803166841" />
-      <entry key="D1" value="160.28062902844775" />
-      <entry key="W1" value="204.73877533243422" />
+      <entry key="S2" value="1.000002917832148" />
+      <entry key="S5" value="1.0091798110117656" />
+      <entry key="S10" value="1.135296669520158" />
+      <entry key="S30" value="1.8146518042767483" />
+      <entry key="S60" value="2.2763889599027656" />
+      <entry key="M2" value="2.5977249770795945" />
+      <entry key="M5" value="2.828909631139056" />
+      <entry key="M10" value="3.0318454638238967" />
+      <entry key="M15" value="3.6463224134551013" />
+      <entry key="M30" value="7.443932541994825" />
+      <entry key="H1" value="16.262159588393175" />
+      <entry key="H2" value="32.80938389716475" />
+      <entry key="H4" value="59.12705324567714" />
+      <entry key="D1" value="158.37001137241245" />
+      <entry key="W1" value="206.83070739689455" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="3.8213006013862426E-166" />
-      <entry key="S2" value="4.421448874133244E-42" />
-      <entry key="S5" value="2.9235559262638424E-17" />
-      <entry key="S10" value="6.307926541930899E-9" />
-      <entry key="S30" value="0.003324395880750656" />
-      <entry key="S60" value="0.10936150668636888" />
-      <entry key="M2" value="0.7984974506359279" />
-      <entry key="M5" value="3.997587284480036" />
-      <entry key="M10" value="8.685264513492408" />
-      <entry key="M15" value="11.821242837859936" />
-      <entry key="M30" value="16.577220338087095" />
-      <entry key="H1" value="19.869760705737377" />
-      <entry key="H2" value="22.203728780412344" />
-      <entry key="H4" value="27.491649904728458" />
-      <entry key="D1" value="71.1629072828087" />
-      <entry key="W1" value="96.55840025826508" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="9.481388786098555E-251" />
+      <entry key="S10" value="1.1359701035108833E-125" />
+      <entry key="S30" value="4.044574384672571E-42" />
+      <entry key="S60" value="3.814560705288384E-21" />
+      <entry key="M2" value="1.4912949829105463E-10" />
+      <entry key="M5" value="5.132322805393406E-4" />
+      <entry key="M10" value="0.09841041294755265" />
+      <entry key="M15" value="0.5963508033545216" />
+      <entry key="M30" value="3.7233258441468586" />
+      <entry key="H1" value="9.416777397855121" />
+      <entry key="H2" value="15.28553864866109" />
+      <entry key="H4" value="22.810154219968656" />
+      <entry key="D1" value="68.98292181082464" />
+      <entry key="W1" value="96.13018150897845" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.0159533144641749" />
-      <entry key="MS500" value="0.4370893102051866" />
-      <entry key="S2" value="0.8130973512263383" />
-      <entry key="S5" value="0.9205704255005259" />
-      <entry key="S10" value="0.9594636350808495" />
-      <entry key="S30" value="0.9950146051198191" />
-      <entry key="S60" value="1.2631422821683433" />
-      <entry key="M2" value="2.8945733102737536" />
-      <entry key="M5" value="9.670484431421144" />
-      <entry key="M10" value="19.197279869116663" />
-      <entry key="M15" value="25.757766939438774" />
-      <entry key="M30" value="36.46488679921258" />
-      <entry key="H1" value="47.86714998472646" />
-      <entry key="H2" value="65.5057694216349" />
-      <entry key="H4" value="95.13656195680186" />
-      <entry key="D1" value="231.44110163178647" />
-      <entry key="W1" value="301.2967109980339" />
+      <entry key="MS100" value="0.9659363289248456" />
+      <entry key="MS500" value="0.9930924954370359" />
+      <entry key="S2" value="0.9982715353686147" />
+      <entry key="S5" value="1.008467118798297" />
+      <entry key="S10" value="1.134802238857779" />
+      <entry key="S30" value="1.8142365555516506" />
+      <entry key="S60" value="2.2760958321710008" />
+      <entry key="M2" value="2.597548610518912" />
+      <entry key="M5" value="2.8293372907082337" />
+      <entry key="M10" value="3.1296357335712583" />
+      <entry key="M15" value="4.240385198015111" />
+      <entry key="M30" value="11.160459787434487" />
+      <entry key="H1" value="25.670518656456558" />
+      <entry key="H2" value="48.08814701054756" />
+      <entry key="H4" value="81.93221415655218" />
+      <entry key="D1" value="227.35057279033362" />
+      <entry key="W1" value="302.9604263311874" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -158,6 +158,8 @@
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="showVisibilityIcons" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
@@ -188,7 +190,7 @@
       <recent name="D:\Java\customer-service\customer-service" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.AccountServiceApplication">
+  <component name="RunManager" selected="Spring Boot.RegistryApplication">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="banking-microservice" />
       <method v="2">
@@ -228,8 +230,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RegistryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
+      <module name="registry" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bank.registry.RegistryApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bank.registry.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.RegistryApplication" />
         <item itemvalue="Spring Boot.AccountServiceApplication" />
         <item itemvalue="Spring Boot.CustomerServiceApplication" />
       </list>
@@ -315,7 +332,15 @@
       <option name="project" value="LOCAL" />
       <updated>1784314840739</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Implemented validation and exception handling for Account Service">
+      <option name="closed" value="true" />
+      <created>1786317359421</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1786317359421</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -329,6 +354,7 @@
     <MESSAGE value="Implemented DELETE customer endpoint" />
     <MESSAGE value="Moved all customer service files into a different directory with all working endpoints, created account service project with necessary files required" />
     <MESSAGE value="Initialized account service with account entity" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initialized account service with account entity" />
+    <MESSAGE value="Implemented validation and exception handling for Account Service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented validation and exception handling for Account Service" />
   </component>
 </project>
