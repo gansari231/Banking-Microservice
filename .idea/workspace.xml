@@ -8,17 +8,11 @@
     <option name="selectedProviderName" value="d9d4d814-08c2-4ecb-88a2-cf76b8bb6280" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef29304e-ea74-41d4-86af-9fa65441aef5" name="Changes" comment="Initialized account service with account entity">
+    <list default="true" id="ef29304e-ea74-41d4-86af-9fa65441aef5" name="Changes" comment="Implemented account CRUD and customer account lookup">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/bank/account/AccountServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/bank/account/AccountServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/bank/account/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/bank/account/service/AccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/bank/customer/CustomerServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/bank/customer/CustomerServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/bank/customer/dto/CustomerPatchRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/bank/customer/dto/CustomerPatchRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/bank/customer/dto/CustomerRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/bank/customer/dto/CustomerRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/bank/customer/dto/CustomerResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/bank/customer/dto/CustomerResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/bank/customer/dto/ErrorResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/bank/customer/dto/ErrorResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/bank/customer/dto/ValidationErrorResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/bank/customer/dto/ValidationErrorResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/bank/customer/service/impl/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/bank/customer/service/impl/CustomerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/bank/account/dto/AccountRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/bank/account/dto/AccountRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/bank/account/service/impl/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/bank/account/service/impl/AccountServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +22,21 @@
   <component name="CopilotPersistence">
     <persistenceIdMap>
       <entry key="_D:/Java/banking-microservice" value="3GdWqfrOyVMzNcT5su9k21sWUbn" />
+      <entry key="_D:/Java/banking-microservice/customer-service" value="3GzLFFT0jlXD4A7c0ud8EScYzUC" />
       <entry key="_D:/Java/customer-service" value="3FyBlECLJbdhaF1VTiD1xkXhUNa" />
     </persistenceIdMap>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -71,58 +78,58 @@
       <entry key="MS100" value="1.0" />
       <entry key="MS500" value="1.0" />
       <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0000000422630237" />
-      <entry key="S10" value="1.000345189560578" />
-      <entry key="S30" value="1.1769092914182429" />
-      <entry key="S60" value="1.9683464358413272" />
-      <entry key="M2" value="3.5150040202973925" />
-      <entry key="M5" value="6.938008589841518" />
-      <entry key="M10" value="11.159201287871813" />
-      <entry key="M15" value="14.061001561330631" />
-      <entry key="M30" value="19.04345304719674" />
-      <entry key="H1" value="26.492928148398114" />
-      <entry key="H2" value="41.45411596510071" />
-      <entry key="H4" value="65.54477469307795" />
-      <entry key="D1" value="157.63475041880025" />
-      <entry key="W1" value="201.80342508693323" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0000000165493097" />
+      <entry key="S30" value="1.0055868299812392" />
+      <entry key="S60" value="1.1655063592709294" />
+      <entry key="M2" value="2.1228824225248397" />
+      <entry key="M5" value="5.723282122416346" />
+      <entry key="M10" value="10.563118068963997" />
+      <entry key="M15" value="13.981328277279934" />
+      <entry key="M30" value="19.91787298409034" />
+      <entry key="H1" value="28.015137342562983" />
+      <entry key="H2" value="43.31187760661779" />
+      <entry key="H4" value="67.65092803166841" />
+      <entry key="D1" value="160.28062902844775" />
+      <entry key="W1" value="204.73877533243422" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="7.494416515917392E-86" />
-      <entry key="MS500" value="9.439470360435788E-18" />
-      <entry key="S2" value="5.650601813892315E-5" />
-      <entry key="S5" value="0.023938881337796127" />
-      <entry key="S10" value="0.20488872809200354" />
-      <entry key="S30" value="0.9446281803736714" />
-      <entry key="S60" value="1.6540945077220413" />
-      <entry key="M2" value="2.9396680787018004" />
-      <entry key="M5" value="6.5741212919218" />
-      <entry key="M10" value="10.956433421067139" />
-      <entry key="M15" value="13.629170147615909" />
-      <entry key="M30" value="17.441446618234036" />
-      <entry key="H1" value="19.95730461428714" />
-      <entry key="H2" value="21.80329731085132" />
-      <entry key="H4" value="26.86037925405231" />
-      <entry key="D1" value="70.32112962639444" />
-      <entry key="W1" value="95.58904139296573" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="3.8213006013862426E-166" />
+      <entry key="S2" value="4.421448874133244E-42" />
+      <entry key="S5" value="2.9235559262638424E-17" />
+      <entry key="S10" value="6.307926541930899E-9" />
+      <entry key="S30" value="0.003324395880750656" />
+      <entry key="S60" value="0.10936150668636888" />
+      <entry key="M2" value="0.7984974506359279" />
+      <entry key="M5" value="3.997587284480036" />
+      <entry key="M10" value="8.685264513492408" />
+      <entry key="M15" value="11.821242837859936" />
+      <entry key="M30" value="16.577220338087095" />
+      <entry key="H1" value="19.869760705737377" />
+      <entry key="H2" value="22.203728780412344" />
+      <entry key="H4" value="27.491649904728458" />
+      <entry key="D1" value="71.1629072828087" />
+      <entry key="W1" value="96.55840025826508" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.6461764153187461" />
-      <entry key="MS500" value="0.9163686446753513" />
-      <entry key="S2" value="0.9784510082182653" />
-      <entry key="S5" value="1.0133941686995616" />
-      <entry key="S10" value="1.1908499630089175" />
-      <entry key="S30" value="2.0790394963435057" />
-      <entry key="S60" value="3.5409216265303116" />
-      <entry key="M2" value="6.357533452183929" />
-      <entry key="M5" value="13.42657498969925" />
-      <entry key="M10" value="22.04989122455319" />
-      <entry key="M15" value="27.637733879685964" />
-      <entry key="M30" value="36.452772695359634" />
-      <entry key="H1" value="46.43224508481956" />
-      <entry key="H2" value="63.24767503425005" />
-      <entry key="H4" value="92.39923907520692" />
-      <entry key="D1" value="227.95347019983367" />
-      <entry key="W1" value="297.39200605957825" />
+      <entry key="MS100" value="0.0159533144641749" />
+      <entry key="MS500" value="0.4370893102051866" />
+      <entry key="S2" value="0.8130973512263383" />
+      <entry key="S5" value="0.9205704255005259" />
+      <entry key="S10" value="0.9594636350808495" />
+      <entry key="S30" value="0.9950146051198191" />
+      <entry key="S60" value="1.2631422821683433" />
+      <entry key="M2" value="2.8945733102737536" />
+      <entry key="M5" value="9.670484431421144" />
+      <entry key="M10" value="19.197279869116663" />
+      <entry key="M15" value="25.757766939438774" />
+      <entry key="M30" value="36.46488679921258" />
+      <entry key="H1" value="47.86714998472646" />
+      <entry key="H2" value="65.5057694216349" />
+      <entry key="H4" value="95.13656195680186" />
+      <entry key="D1" value="231.44110163178647" />
+      <entry key="W1" value="301.2967109980339" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -152,29 +159,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "Spring Boot.AccountServiceApplication.executor": "Run",
-    "Spring Boot.CustomerServiceApplication.executor": "Run",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "copilot.chat.legacySessionMetadata.migrated": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Java/banking-microservice",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.github.copilot.settings.ApplicationConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;Spring Boot.AccountServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.CustomerServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;copilot.chat.legacySessionMetadata.migrated&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Java/banking-microservice&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.github.copilot.settings.ApplicationConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Java\banking-microservice\customer-service" />
@@ -231,8 +238,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.26222.65" />
-        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.26222.65" />
+        <option value="bundled-jdk-30f59d01ecdd-63390994e64e-intellij.indexing.shared.core-IU-262.8665.337" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.8665.337" />
       </set>
     </attachedChunks>
   </component>
