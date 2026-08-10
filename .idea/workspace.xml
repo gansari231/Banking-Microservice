@@ -8,11 +8,15 @@
     <option name="selectedProviderName" value="d9d4d814-08c2-4ecb-88a2-cf76b8bb6280" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef29304e-ea74-41d4-86af-9fa65441aef5" name="Changes" comment="Implemented validation and exception handling for Account Service">
+    <list default="true" id="ef29304e-ea74-41d4-86af-9fa65441aef5" name="Changes" comment="Added Eureka service registry">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/bank/account/AccountServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/bank/account/AccountServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/bank/account/service/impl/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/bank/account/service/impl/AccountServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,61 +79,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.000002917832148" />
-      <entry key="S5" value="1.0091798110117656" />
-      <entry key="S10" value="1.135296669520158" />
-      <entry key="S30" value="1.8146518042767483" />
-      <entry key="S60" value="2.2763889599027656" />
-      <entry key="M2" value="2.5977249770795945" />
-      <entry key="M5" value="2.828909631139056" />
-      <entry key="M10" value="3.0318454638238967" />
-      <entry key="M15" value="3.6463224134551013" />
-      <entry key="M30" value="7.443932541994825" />
-      <entry key="H1" value="16.262159588393175" />
-      <entry key="H2" value="32.80938389716475" />
-      <entry key="H4" value="59.12705324567714" />
-      <entry key="D1" value="158.37001137241245" />
-      <entry key="W1" value="206.83070739689455" />
+      <entry key="MS100" value="2.1276796477497845E-10" />
+      <entry key="MS500" value="0.011751942260346628" />
+      <entry key="S2" value="0.43346970350689923" />
+      <entry key="S5" value="1.0466274073329134" />
+      <entry key="S10" value="1.4375845078735683" />
+      <entry key="S30" value="1.7890833452342632" />
+      <entry key="S60" value="1.9012248622821786" />
+      <entry key="M2" value="2.0542847720328323" />
+      <entry key="M5" value="2.6589740480350628" />
+      <entry key="M10" value="3.5318004776589382" />
+      <entry key="M15" value="4.081436310351953" />
+      <entry key="M30" value="4.866566053892646" />
+      <entry key="H1" value="5.381386653929331" />
+      <entry key="H2" value="5.883671599891246" />
+      <entry key="H4" value="10.660575662824042" />
+      <entry key="D1" value="115.05058000154527" />
+      <entry key="W1" value="212.08290992189876" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="0.0" />
-      <entry key="S5" value="9.481388786098555E-251" />
-      <entry key="S10" value="1.1359701035108833E-125" />
-      <entry key="S30" value="4.044574384672571E-42" />
-      <entry key="S60" value="3.814560705288384E-21" />
-      <entry key="M2" value="1.4912949829105463E-10" />
-      <entry key="M5" value="5.132322805393406E-4" />
-      <entry key="M10" value="0.09841041294755265" />
-      <entry key="M15" value="0.5963508033545216" />
-      <entry key="M30" value="3.7233258441468586" />
-      <entry key="H1" value="9.416777397855121" />
-      <entry key="H2" value="15.28553864866109" />
-      <entry key="H4" value="22.810154219968656" />
-      <entry key="D1" value="68.98292181082464" />
-      <entry key="W1" value="96.13018150897845" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.000014099465522" />
+      <entry key="S2" value="1.061277446923959" />
+      <entry key="S5" value="1.3272806017397534" />
+      <entry key="S10" value="1.5720844358482" />
+      <entry key="S30" value="1.8301438933028824" />
+      <entry key="S60" value="1.9111223262015273" />
+      <entry key="M2" value="1.954527278919533" />
+      <entry key="M5" value="1.9815565777310098" />
+      <entry key="M10" value="1.9907353722013816" />
+      <entry key="M15" value="1.9938140049477484" />
+      <entry key="M30" value="1.9969022056803007" />
+      <entry key="H1" value="1.9986308967056894" />
+      <entry key="H2" value="2.0662384169642127" />
+      <entry key="H4" value="3.509935346873328" />
+      <entry key="D1" value="45.87642344946428" />
+      <entry key="W1" value="92.11288619673404" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9659363289248456" />
-      <entry key="MS500" value="0.9930924954370359" />
-      <entry key="S2" value="0.9982715353686147" />
-      <entry key="S5" value="1.008467118798297" />
-      <entry key="S10" value="1.134802238857779" />
-      <entry key="S30" value="1.8142365555516506" />
-      <entry key="S60" value="2.2760958321710008" />
-      <entry key="M2" value="2.597548610518912" />
-      <entry key="M5" value="2.8293372907082337" />
-      <entry key="M10" value="3.1296357335712583" />
-      <entry key="M15" value="4.240385198015111" />
-      <entry key="M30" value="11.160459787434487" />
-      <entry key="H1" value="25.670518656456558" />
-      <entry key="H2" value="48.08814701054756" />
-      <entry key="H4" value="81.93221415655218" />
-      <entry key="D1" value="227.35057279033362" />
-      <entry key="W1" value="302.9604263311874" />
+      <entry key="MS100" value="9.110847202802718E-9" />
+      <entry key="MS500" value="0.028998823204594473" />
+      <entry key="S2" value="0.7757511808469527" />
+      <entry key="S5" value="1.9191069961485427" />
+      <entry key="S10" value="2.7292058874912812" />
+      <entry key="S30" value="3.5093579610864043" />
+      <entry key="S60" value="3.7548605226883858" />
+      <entry key="M2" value="3.978879823510919" />
+      <entry key="M5" value="4.627660496253352" />
+      <entry key="M10" value="5.515774904844628" />
+      <entry key="M15" value="6.0706447211081" />
+      <entry key="M30" value="6.8611074238031975" />
+      <entry key="H1" value="7.378820477291739" />
+      <entry key="H2" value="7.949277395985461" />
+      <entry key="H4" value="14.16987742474263" />
+      <entry key="D1" value="160.92545093834514" />
+      <entry key="W1" value="304.19535514299344" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -161,31 +165,36 @@
     <option name="showMembers" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;Spring Boot.AccountServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.CustomerServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;copilot.chat.legacySessionMetadata.migrated&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Java/banking-microservice&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.github.copilot.settings.ApplicationConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "Spring Boot.AccountServiceApplication.executor": "Run",
+    "Spring Boot.CustomerServiceApplication.executor": "Run",
+    "Spring Boot.RegistryApplication.executor": "Run",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "copilot.chat.legacySessionMetadata.migrated": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Java/banking-microservice",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.build.tools.auto.reload": "SELECTIVE",
+    "settings.editor.selected.configurable": "build.tools"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Java\banking-microservice\account-service\src\main\java\com\bank\account" />
       <recent name="D:\Java\banking-microservice\customer-service" />
       <recent name="D:\Java\customer-service\customer-service" />
     </key>
@@ -246,9 +255,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.RegistryApplication" />
         <item itemvalue="Spring Boot.AccountServiceApplication" />
         <item itemvalue="Spring Boot.CustomerServiceApplication" />
+        <item itemvalue="Spring Boot.RegistryApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -340,7 +349,15 @@
       <option name="project" value="LOCAL" />
       <updated>1786317359421</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added Eureka service registry">
+      <option name="closed" value="true" />
+      <created>1786318745006</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1786318745006</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -355,6 +372,7 @@
     <MESSAGE value="Moved all customer service files into a different directory with all working endpoints, created account service project with necessary files required" />
     <MESSAGE value="Initialized account service with account entity" />
     <MESSAGE value="Implemented validation and exception handling for Account Service" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented validation and exception handling for Account Service" />
+    <MESSAGE value="Added Eureka service registry" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Eureka service registry" />
   </component>
 </project>

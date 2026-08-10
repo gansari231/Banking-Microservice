@@ -1,7 +1,9 @@
 package com.bank.account.service.impl;
 
+import com.bank.account.client.CustomerClient;
 import com.bank.account.dto.AccountRequest;
 import com.bank.account.dto.AccountResponse;
+import com.bank.account.dto.CustomerResponse;
 import com.bank.account.entity.Account;
 import com.bank.account.exception.*;
 import com.bank.account.mapper.AccountMapper;
@@ -15,10 +17,12 @@ import java.util.List;
 public class AccountServiceImpl implements AccountService {
 
     private final AccountRepository accountRepository;
+    private final CustomerClient customerClient;
 
-    public AccountServiceImpl(AccountRepository accountRepository) {
+    public AccountServiceImpl(AccountRepository accountRepository, CustomerClient customerClient) {
 
         this.accountRepository = accountRepository;
+        this.customerClient = customerClient;
     }
 
     @Override
@@ -28,6 +32,7 @@ public class AccountServiceImpl implements AccountService {
             throw new AccountAlreadyExistsException("Account with number " + request.getAccountNumber() + " already exists.");
         }
 
+        CustomerResponse customer = customerClient.getCustomerById(request.getCustomerId());
         Account account = AccountMapper.toEntity(request);
         Account savedAccount = accountRepository.save(account);
         return AccountMapper.toResponse(savedAccount);
