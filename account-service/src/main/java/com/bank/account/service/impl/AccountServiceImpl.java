@@ -9,6 +9,7 @@ import com.bank.account.exception.*;
 import com.bank.account.mapper.AccountMapper;
 import com.bank.account.repository.AccountRepository;
 import com.bank.account.service.AccountService;
+import feign.FeignException;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -32,7 +33,15 @@ public class AccountServiceImpl implements AccountService {
             throw new AccountAlreadyExistsException("Account with number " + request.getAccountNumber() + " already exists.");
         }
 
-        CustomerResponse customer = customerClient.getCustomerById(request.getCustomerId());
+        CustomerResponse customer;
+
+        try {
+            customer = customerClient.getCustomerById(request.getCustomerId());
+        }
+        catch (FeignException.NotFound ex) {
+            throw new CustomerNotFoundException("Customer with ID " + request.getCustomerId() + " not found.");
+        }
+
         Account account = AccountMapper.toEntity(request);
         Account savedAccount = accountRepository.save(account);
         return AccountMapper.toResponse(savedAccount);

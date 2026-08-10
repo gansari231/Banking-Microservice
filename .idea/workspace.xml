@@ -8,15 +8,10 @@
     <option name="selectedProviderName" value="d9d4d814-08c2-4ecb-88a2-cf76b8bb6280" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef29304e-ea74-41d4-86af-9fa65441aef5" name="Changes" comment="Added Eureka service registry">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="ef29304e-ea74-41d4-86af-9fa65441aef5" name="Changes" comment="Implemented feature Eureka Service Discovery,OpenFeign Service Communication between services">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/bank/account/AccountServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/bank/account/AccountServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/bank/account/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/bank/account/exception/GlobalExceptionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/bank/account/service/impl/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/bank/account/service/impl/AccountServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,61 +74,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="2.1276796477497845E-10" />
-      <entry key="MS500" value="0.011751942260346628" />
-      <entry key="S2" value="0.43346970350689923" />
-      <entry key="S5" value="1.0466274073329134" />
-      <entry key="S10" value="1.4375845078735683" />
-      <entry key="S30" value="1.7890833452342632" />
-      <entry key="S60" value="1.9012248622821786" />
-      <entry key="M2" value="2.0542847720328323" />
-      <entry key="M5" value="2.6589740480350628" />
-      <entry key="M10" value="3.5318004776589382" />
-      <entry key="M15" value="4.081436310351953" />
-      <entry key="M30" value="4.866566053892646" />
-      <entry key="H1" value="5.381386653929331" />
-      <entry key="H2" value="5.883671599891246" />
-      <entry key="H4" value="10.660575662824042" />
-      <entry key="D1" value="115.05058000154527" />
-      <entry key="W1" value="212.08290992189876" />
+      <entry key="MS100" value="1.0022126638855002" />
+      <entry key="MS500" value="1.3081879974712909" />
+      <entry key="S2" value="2.6918067751710515" />
+      <entry key="S5" value="4.748551631825242" />
+      <entry key="S10" value="6.6325218502625365" />
+      <entry key="S30" value="9.063528657121381" />
+      <entry key="S60" value="9.950083368964938" />
+      <entry key="M2" value="10.452476057895298" />
+      <entry key="M5" value="10.775271842033725" />
+      <entry key="M10" value="10.886656309331439" />
+      <entry key="M15" value="10.924220861498496" />
+      <entry key="M30" value="10.966189841551152" />
+      <entry key="H1" value="11.138898611274056" />
+      <entry key="H2" value="11.998406940632355" />
+      <entry key="H4" value="15.407600516165322" />
+      <entry key="D1" value="110.31932681554458" />
+      <entry key="W1" value="218.67479145906697" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.000014099465522" />
-      <entry key="S2" value="1.061277446923959" />
-      <entry key="S5" value="1.3272806017397534" />
-      <entry key="S10" value="1.5720844358482" />
-      <entry key="S30" value="1.8301438933028824" />
-      <entry key="S60" value="1.9111223262015273" />
-      <entry key="M2" value="1.954527278919533" />
-      <entry key="M5" value="1.9815565777310098" />
-      <entry key="M10" value="1.9907353722013816" />
-      <entry key="M15" value="1.9938140049477484" />
-      <entry key="M30" value="1.9969022056803007" />
-      <entry key="H1" value="1.9986308967056894" />
-      <entry key="H2" value="2.0662384169642127" />
-      <entry key="H4" value="3.509935346873328" />
-      <entry key="D1" value="45.87642344946428" />
-      <entry key="W1" value="92.11288619673404" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="2.343979376209503E-184" />
+      <entry key="S60" value="2.162831870986761E-92" />
+      <entry key="M2" value="2.079260357092297E-46" />
+      <entry key="M5" value="8.086364838151613E-19" />
+      <entry key="M10" value="1.2717067038594925E-9" />
+      <entry key="M15" value="1.4788822412969613E-6" />
+      <entry key="M30" value="0.0017198131784370745" />
+      <entry key="H1" value="0.05865362183446656" />
+      <entry key="H2" value="0.3539660023027363" />
+      <entry key="H4" value="1.452745959774241" />
+      <entry key="D1" value="39.60390219337342" />
+      <entry key="W1" value="90.1983799018612" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="9.110847202802718E-9" />
-      <entry key="MS500" value="0.028998823204594473" />
-      <entry key="S2" value="0.7757511808469527" />
-      <entry key="S5" value="1.9191069961485427" />
-      <entry key="S10" value="2.7292058874912812" />
-      <entry key="S30" value="3.5093579610864043" />
-      <entry key="S60" value="3.7548605226883858" />
-      <entry key="M2" value="3.978879823510919" />
-      <entry key="M5" value="4.627660496253352" />
-      <entry key="M10" value="5.515774904844628" />
-      <entry key="M15" value="6.0706447211081" />
-      <entry key="M30" value="6.8611074238031975" />
-      <entry key="H1" value="7.378820477291739" />
-      <entry key="H2" value="7.949277395985461" />
-      <entry key="H4" value="14.16987742474263" />
-      <entry key="D1" value="160.92545093834514" />
-      <entry key="W1" value="304.19535514299344" />
+      <entry key="MS100" value="0.9614014117524168" />
+      <entry key="MS500" value="1.2976231021475084" />
+      <entry key="S2" value="2.6847912587882643" />
+      <entry key="S5" value="4.742677241918439" />
+      <entry key="S10" value="6.628013488208532" />
+      <entry key="S30" value="9.061304456207832" />
+      <entry key="S60" value="9.948835961998656" />
+      <entry key="M2" value="10.451813703139454" />
+      <entry key="M5" value="10.774996924761773" />
+      <entry key="M10" value="10.88651712737688" />
+      <entry key="M15" value="10.924129160172702" />
+      <entry key="M30" value="10.967860837899517" />
+      <entry key="H1" value="11.1974936619025" />
+      <entry key="H2" value="12.352252836361211" />
+      <entry key="H4" value="16.86007836864556" />
+      <entry key="D1" value="149.92188778715985" />
+      <entry key="W1" value="308.87273941086033" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -357,7 +352,15 @@
       <option name="project" value="LOCAL" />
       <updated>1786318745006</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Implemented feature Eureka Service Discovery,OpenFeign Service Communication between services">
+      <option name="closed" value="true" />
+      <created>1786392086195</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1786392086195</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -373,6 +376,7 @@
     <MESSAGE value="Initialized account service with account entity" />
     <MESSAGE value="Implemented validation and exception handling for Account Service" />
     <MESSAGE value="Added Eureka service registry" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Eureka service registry" />
+    <MESSAGE value="Implemented feature Eureka Service Discovery,OpenFeign Service Communication between services" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented feature Eureka Service Discovery,OpenFeign Service Communication between services" />
   </component>
 </project>
