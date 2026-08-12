@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="BackgroundAgentGlobalSettings">
-    <option name="selectedModelId" value="meta/llama-3.3-70b-instruct" />
-    <option name="selectedProviderName" value="d9d4d814-08c2-4ecb-88a2-cf76b8bb6280" />
+    <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef29304e-ea74-41d4-86af-9fa65441aef5" name="Changes" comment="Implemented feature Eureka Service Discovery,OpenFeign Service Communication between services">
+    <list default="true" id="ef29304e-ea74-41d4-86af-9fa65441aef5" name="Changes" comment="Implemented feature for handling customer not found in account service">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/bank/account/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/bank/account/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/bank/account/service/impl/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/bank/account/service/impl/AccountServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,23 +74,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0022126638855002" />
-      <entry key="MS500" value="1.3081879974712909" />
-      <entry key="S2" value="2.6918067751710515" />
-      <entry key="S5" value="4.748551631825242" />
-      <entry key="S10" value="6.6325218502625365" />
-      <entry key="S30" value="9.063528657121381" />
-      <entry key="S60" value="9.950083368964938" />
-      <entry key="M2" value="10.452476057895298" />
-      <entry key="M5" value="10.775271842033725" />
-      <entry key="M10" value="10.886656309331439" />
-      <entry key="M15" value="10.924220861498496" />
-      <entry key="M30" value="10.966189841551152" />
-      <entry key="H1" value="11.138898611274056" />
-      <entry key="H2" value="11.998406940632355" />
-      <entry key="H4" value="15.407600516165322" />
-      <entry key="D1" value="110.31932681554458" />
-      <entry key="W1" value="218.67479145906697" />
+      <entry key="MS100" value="1.0000000409943408" />
+      <entry key="MS500" value="1.0333077105021231" />
+      <entry key="S2" value="1.4272048704448665" />
+      <entry key="S5" value="1.711630376697356" />
+      <entry key="S10" value="1.8435818731441282" />
+      <entry key="S30" value="1.9448780198253188" />
+      <entry key="S60" value="1.9720483629111123" />
+      <entry key="M2" value="1.9859336510941752" />
+      <entry key="M5" value="2.033876298858178" />
+      <entry key="M10" value="2.6565628970290547" />
+      <entry key="M15" value="3.6829468729855592" />
+      <entry key="M30" value="6.305701911016758" />
+      <entry key="H1" value="8.979986628453851" />
+      <entry key="H2" value="11.498032509948727" />
+      <entry key="H4" value="15.708555677562096" />
+      <entry key="D1" value="110.1919452857264" />
+      <entry key="W1" value="220.06734222646307" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -98,37 +98,37 @@
       <entry key="S2" value="0.0" />
       <entry key="S5" value="0.0" />
       <entry key="S10" value="0.0" />
-      <entry key="S30" value="2.343979376209503E-184" />
-      <entry key="S60" value="2.162831870986761E-92" />
-      <entry key="M2" value="2.079260357092297E-46" />
-      <entry key="M5" value="8.086364838151613E-19" />
-      <entry key="M10" value="1.2717067038594925E-9" />
-      <entry key="M15" value="1.4788822412969613E-6" />
-      <entry key="M30" value="0.0017198131784370745" />
-      <entry key="H1" value="0.05865362183446656" />
-      <entry key="H2" value="0.3539660023027363" />
-      <entry key="H4" value="1.452745959774241" />
-      <entry key="D1" value="39.60390219337342" />
-      <entry key="W1" value="90.1983799018612" />
+      <entry key="S30" value="1.035050257271881E-208" />
+      <entry key="S60" value="1.4372310341157152E-104" />
+      <entry key="M2" value="1.6949652013780955E-52" />
+      <entry key="M5" value="2.966566560208693E-21" />
+      <entry key="M10" value="7.702599963834052E-11" />
+      <entry key="M15" value="2.2808699084831746E-7" />
+      <entry key="M30" value="6.754057184608764E-4" />
+      <entry key="H1" value="0.0367567043582412" />
+      <entry key="H2" value="0.2802092167474702" />
+      <entry key="H4" value="1.2925582051409508" />
+      <entry key="D1" value="38.840193487197766" />
+      <entry key="W1" value="89.94782206385966" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9614014117524168" />
-      <entry key="MS500" value="1.2976231021475084" />
-      <entry key="S2" value="2.6847912587882643" />
-      <entry key="S5" value="4.742677241918439" />
-      <entry key="S10" value="6.628013488208532" />
-      <entry key="S30" value="9.061304456207832" />
-      <entry key="S60" value="9.948835961998656" />
-      <entry key="M2" value="10.451813703139454" />
-      <entry key="M5" value="10.774996924761773" />
-      <entry key="M10" value="10.88651712737688" />
-      <entry key="M15" value="10.924129160172702" />
-      <entry key="M30" value="10.967860837899517" />
-      <entry key="H1" value="11.1974936619025" />
-      <entry key="H2" value="12.352252836361211" />
-      <entry key="H4" value="16.86007836864556" />
-      <entry key="D1" value="149.92188778715985" />
-      <entry key="W1" value="308.87273941086033" />
+      <entry key="MS100" value="0.9592641583780311" />
+      <entry key="MS500" value="1.0247027844144796" />
+      <entry key="S2" value="1.4240924401154402" />
+      <entry key="S5" value="1.710108710444574" />
+      <entry key="S10" value="1.8427568621102863" />
+      <entry key="S30" value="1.9445865931302853" />
+      <entry key="S60" value="1.9719004469722874" />
+      <entry key="M2" value="1.9858591301135995" />
+      <entry key="M5" value="2.033845345587035" />
+      <entry key="M10" value="2.6565394716785202" />
+      <entry key="M15" value="3.682922728031938" />
+      <entry key="M30" value="6.306353141859628" />
+      <entry key="H1" value="9.016704125362347" />
+      <entry key="H2" value="11.77814539567483" />
+      <entry key="H4" value="17.000874712674975" />
+      <entry key="D1" value="149.0308233105562" />
+      <entry key="W1" value="310.0147335252496" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -168,6 +168,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "Spring Boot.AccountServiceApplication.executor": "Run",
+    "Spring Boot.ApiGatewayApplication.executor": "Run",
     "Spring Boot.CustomerServiceApplication.executor": "Run",
     "Spring Boot.RegistryApplication.executor": "Run",
     "codeWithMe.voiceChat.enabledByDefault": "false",
@@ -220,6 +221,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
+      <module name="api-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bank.apigateway.ApiGatewayApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bank.apigateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CustomerServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
       <module name="customer-service" />
@@ -250,6 +265,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.ApiGatewayApplication" />
         <item itemvalue="Spring Boot.AccountServiceApplication" />
         <item itemvalue="Spring Boot.CustomerServiceApplication" />
         <item itemvalue="Spring Boot.RegistryApplication" />
@@ -360,7 +376,15 @@
       <option name="project" value="LOCAL" />
       <updated>1786392086195</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Implemented feature for handling customer not found in account service">
+      <option name="closed" value="true" />
+      <created>1786394510856</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1786394510856</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -377,6 +401,7 @@
     <MESSAGE value="Implemented validation and exception handling for Account Service" />
     <MESSAGE value="Added Eureka service registry" />
     <MESSAGE value="Implemented feature Eureka Service Discovery,OpenFeign Service Communication between services" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented feature Eureka Service Discovery,OpenFeign Service Communication between services" />
+    <MESSAGE value="Implemented feature for handling customer not found in account service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented feature for handling customer not found in account service" />
   </component>
 </project>
