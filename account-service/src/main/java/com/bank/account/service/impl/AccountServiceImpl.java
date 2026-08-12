@@ -68,4 +68,13 @@ public class AccountServiceImpl implements AccountService {
                 .map(AccountMapper::toResponse)
                 .toList();
     }
+
+    @Override
+    public CustomerResponse getAccountCustomer(Long accountId) {
+
+        Account account = accountRepository.findById(accountId)
+                .orElseThrow(() -> new AccountNotFoundException("Account with ID " + accountId + " not found."));
+
+        return customerClient.getCustomerById(account.getCustomerId());
+    }
 }

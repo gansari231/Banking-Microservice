@@ -7,11 +7,11 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef29304e-ea74-41d4-86af-9fa65441aef5" name="Changes" comment="Implemented feature for handling customer not found in account service">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="ef29304e-ea74-41d4-86af-9fa65441aef5" name="Changes" comment="Implemented feature added api gateway routes for customer and account services">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/bank/account/controller/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/bank/account/controller/AccountController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/bank/account/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/bank/account/service/AccountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/bank/account/service/impl/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/bank/account/service/impl/AccountServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,23 +74,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000000409943408" />
-      <entry key="MS500" value="1.0333077105021231" />
-      <entry key="S2" value="1.4272048704448665" />
-      <entry key="S5" value="1.711630376697356" />
-      <entry key="S10" value="1.8435818731441282" />
-      <entry key="S30" value="1.9448780198253188" />
-      <entry key="S60" value="1.9720483629111123" />
-      <entry key="M2" value="1.9859336510941752" />
-      <entry key="M5" value="2.033876298858178" />
-      <entry key="M10" value="2.6565628970290547" />
-      <entry key="M15" value="3.6829468729855592" />
-      <entry key="M30" value="6.305701911016758" />
-      <entry key="H1" value="8.979986628453851" />
-      <entry key="H2" value="11.498032509948727" />
-      <entry key="H4" value="15.708555677562096" />
-      <entry key="D1" value="110.1919452857264" />
-      <entry key="W1" value="220.06734222646307" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0" />
+      <entry key="S30" value="1.0000000207390018" />
+      <entry key="S60" value="1.0003219581515834" />
+      <entry key="M2" value="1.0401204197507643" />
+      <entry key="M5" value="1.7313751820425232" />
+      <entry key="M10" value="3.1558776626546843" />
+      <entry key="M15" value="4.5127182542055335" />
+      <entry key="M30" value="7.746157986968177" />
+      <entry key="H1" value="11.200029054689947" />
+      <entry key="H2" value="14.377624638004342" />
+      <entry key="H4" value="18.971065908119396" />
+      <entry key="D1" value="113.43558561902601" />
+      <entry key="W1" value="223.85378829250428" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -98,37 +98,37 @@
       <entry key="S2" value="0.0" />
       <entry key="S5" value="0.0" />
       <entry key="S10" value="0.0" />
-      <entry key="S30" value="1.035050257271881E-208" />
-      <entry key="S60" value="1.4372310341157152E-104" />
-      <entry key="M2" value="1.6949652013780955E-52" />
-      <entry key="M5" value="2.966566560208693E-21" />
-      <entry key="M10" value="7.702599963834052E-11" />
-      <entry key="M15" value="2.2808699084831746E-7" />
-      <entry key="M30" value="6.754057184608764E-4" />
-      <entry key="H1" value="0.0367567043582412" />
-      <entry key="H2" value="0.2802092167474702" />
-      <entry key="H4" value="1.2925582051409508" />
-      <entry key="D1" value="38.840193487197766" />
-      <entry key="W1" value="89.94782206385966" />
+      <entry key="S30" value="4.253804334386341E-217" />
+      <entry key="S60" value="9.213711770691131E-109" />
+      <entry key="M2" value="1.3571092300700192E-54" />
+      <entry key="M5" value="4.301656266208677E-22" />
+      <entry key="M10" value="2.933108624205606E-11" />
+      <entry key="M15" value="1.1982875616640997E-7" />
+      <entry key="M30" value="4.895476850323018E-4" />
+      <entry key="H1" value="0.03129332417650953" />
+      <entry key="H2" value="0.2585472859016892" />
+      <entry key="H4" value="1.2415919621832576" />
+      <entry key="D1" value="38.58064778149071" />
+      <entry key="W1" value="89.86170836931869" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9592641583780311" />
-      <entry key="MS500" value="1.0247027844144796" />
-      <entry key="S2" value="1.4240924401154402" />
-      <entry key="S5" value="1.710108710444574" />
-      <entry key="S10" value="1.8427568621102863" />
-      <entry key="S30" value="1.9445865931302853" />
-      <entry key="S60" value="1.9719004469722874" />
-      <entry key="M2" value="1.9858591301135995" />
-      <entry key="M5" value="2.033845345587035" />
-      <entry key="M10" value="2.6565394716785202" />
-      <entry key="M15" value="3.682922728031938" />
-      <entry key="M30" value="6.306353141859628" />
-      <entry key="H1" value="9.016704125362347" />
-      <entry key="H2" value="11.77814539567483" />
-      <entry key="H4" value="17.000874712674975" />
-      <entry key="D1" value="149.0308233105562" />
-      <entry key="W1" value="310.0147335252496" />
+      <entry key="MS100" value="0.005048253244677701" />
+      <entry key="MS500" value="0.3472387839412776" />
+      <entry key="S2" value="0.7676390453239342" />
+      <entry key="S5" value="0.8996277073361975" />
+      <entry key="S10" value="0.9484870622924687" />
+      <entry key="S30" value="0.9825254598864005" />
+      <entry key="S60" value="0.9915460198833469" />
+      <entry key="M2" value="1.0357134593484814" />
+      <entry key="M5" value="1.7295456475931485" />
+      <entry key="M10" value="3.1549040700631465" />
+      <entry key="M15" value="4.512041214458739" />
+      <entry key="M30" value="7.746283200759489" />
+      <entry key="H1" value="11.231110954344697" />
+      <entry key="H2" value="14.635992710455245" />
+      <entry key="H4" value="20.21238261919042" />
+      <entry key="D1" value="152.01491909331816" />
+      <entry key="W1" value="313.7150652171508" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -384,7 +384,15 @@
       <option name="project" value="LOCAL" />
       <updated>1786394510856</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Implemented feature added api gateway routes for customer and account services">
+      <option name="closed" value="true" />
+      <created>1786569012309</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1786569012309</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -402,6 +410,7 @@
     <MESSAGE value="Added Eureka service registry" />
     <MESSAGE value="Implemented feature Eureka Service Discovery,OpenFeign Service Communication between services" />
     <MESSAGE value="Implemented feature for handling customer not found in account service" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented feature for handling customer not found in account service" />
+    <MESSAGE value="Implemented feature added api gateway routes for customer and account services" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented feature added api gateway routes for customer and account services" />
   </component>
 </project>

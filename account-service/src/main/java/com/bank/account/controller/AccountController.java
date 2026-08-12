@@ -2,9 +2,11 @@ package com.bank.account.controller;
 
 import com.bank.account.dto.AccountRequest;
 import com.bank.account.dto.AccountResponse;
+import com.bank.account.dto.CustomerResponse;
 import com.bank.account.service.AccountService;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -32,6 +34,11 @@ public class AccountController {
     @GetMapping("/{id}")
     public AccountResponse getAccountById(@PathVariable Long id) {
         return accountService.getById(id);
+    }
+
+    @GetMapping("/{id}/customer")
+    public ResponseEntity<CustomerResponse> getAccountCustomer(@PathVariable Long id) {
+        return ResponseEntity.ok(accountService.getAccountCustomer(id));
     }
 
     @GetMapping("/customer/{customerId}")
