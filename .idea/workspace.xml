@@ -7,13 +7,7 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef29304e-ea74-41d4-86af-9fa65441aef5" name="Changes" comment="Implemented feature added account customer lookup via feign, Added an endpoint to retrieve customer details associated with an account.">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="ef29304e-ea74-41d4-86af-9fa65441aef5" name="Changes" comment="Implemented added centralized banking configuration" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,23 +75,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.3186401568298156" />
-      <entry key="MS500" value="1.7955364837549186" />
-      <entry key="S2" value="1.9444196733550676" />
-      <entry key="S5" value="1.9773857867831115" />
-      <entry key="S10" value="1.9900067587680863" />
-      <entry key="S30" value="5.101198281887188" />
-      <entry key="S60" value="24.674428914752724" />
-      <entry key="M2" value="63.89678025226945" />
-      <entry key="M5" value="120.27133594052094" />
-      <entry key="M10" value="175.8918643258134" />
-      <entry key="M15" value="218.47120346489896" />
-      <entry key="M30" value="293.67319474008184" />
-      <entry key="H1" value="353.5335243166242" />
-      <entry key="H2" value="392.80119783421355" />
-      <entry key="H4" value="417.8419085929713" />
-      <entry key="D1" value="529.736024460032" />
-      <entry key="W1" value="644.7457575548407" />
+      <entry key="MS100" value="1.5625292423444046" />
+      <entry key="MS500" value="1.8913104958969713" />
+      <entry key="S2" value="1.9716441834078204" />
+      <entry key="S5" value="1.9885597050562593" />
+      <entry key="S10" value="1.99435932068966" />
+      <entry key="S30" value="2.071872061342976" />
+      <entry key="S60" value="2.7462428535319177" />
+      <entry key="M2" value="10.654551723019514" />
+      <entry key="M5" value="55.244311539016834" />
+      <entry key="M10" value="119.13712848366522" />
+      <entry key="M15" value="168.78719896405636" />
+      <entry key="M30" value="259.1065044033984" />
+      <entry key="H1" value="333.51781045242046" />
+      <entry key="H2" value="383.2289120929675" />
+      <entry key="H4" value="414.56078371097294" />
+      <entry key="D1" value="532.1868941853473" />
+      <entry key="W1" value="648.4761404078037" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -105,37 +99,37 @@
       <entry key="S2" value="0.0" />
       <entry key="S5" value="0.0" />
       <entry key="S10" value="0.0" />
-      <entry key="S30" value="5.175147048472552E-240" />
-      <entry key="S60" value="3.213713926481794E-120" />
-      <entry key="M2" value="2.534551385446833E-60" />
-      <entry key="M5" value="2.1986202449154313E-24" />
-      <entry key="M10" value="2.096937112587869E-12" />
-      <entry key="M15" value="2.0641086673882247E-8" />
-      <entry key="M30" value="2.0317990564505618E-4" />
-      <entry key="H1" value="0.0201601879046544" />
-      <entry key="H2" value="0.20752069890753017" />
-      <entry key="H4" value="1.1123452677317547" />
-      <entry key="D1" value="37.880261507161656" />
-      <entry key="W1" value="89.62682690767343" />
+      <entry key="S30" value="1.1385130338805023E-243" />
+      <entry key="S60" value="4.766667634821809E-122" />
+      <entry key="M2" value="3.086774675914061E-61" />
+      <entry key="M5" value="9.470910964965786E-25" />
+      <entry key="M10" value="1.3762780128623719E-12" />
+      <entry key="M15" value="1.558881373678497E-8" />
+      <entry key="M30" value="1.765716638837915E-4" />
+      <entry key="H1" value="0.018793804431562405" />
+      <entry key="H2" value="0.20036482674427292" />
+      <entry key="H4" value="1.0929986950147472" />
+      <entry key="D1" value="37.769651169678525" />
+      <entry key="W1" value="89.58939285372153" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.2737224322610747" />
-      <entry key="MS500" value="1.783133807300413" />
-      <entry key="S2" value="1.941053168515632" />
-      <entry key="S5" value="1.9760156422740929" />
-      <entry key="S10" value="1.989315640991296" />
-      <entry key="S30" value="5.099223151333632" />
-      <entry key="S60" value="24.667814808564646" />
-      <entry key="M2" value="63.887796861718066" />
-      <entry key="M5" value="120.2646367241428" />
-      <entry key="M10" value="175.8873708635199" />
-      <entry key="M15" value="218.4677024369934" />
-      <entry key="M30" value="293.67121374541284" />
-      <entry key="H1" value="353.55240787868775" />
-      <entry key="H2" value="393.00796653508087" />
-      <entry key="H4" value="418.9536926515113" />
-      <entry key="D1" value="567.6149415228035" />
-      <entry key="W1" value="734.3721463921107" />
+      <entry key="MS100" value="1.5026315505882935" />
+      <entry key="MS500" value="1.8768704953178383" />
+      <entry key="S2" value="1.9678846293407855" />
+      <entry key="S5" value="1.9870432943066718" />
+      <entry key="S10" value="1.9935988110415697" />
+      <entry key="S30" value="2.071571604461786" />
+      <entry key="S60" value="2.7458967068192726" />
+      <entry key="M2" value="10.65325547884786" />
+      <entry key="M5" value="55.241309121973885" />
+      <entry key="M10" value="119.13411276294178" />
+      <entry key="M15" value="168.78450847759098" />
+      <entry key="M30" value="259.10475856143177" />
+      <entry key="H1" value="333.535401737" />
+      <entry key="H2" value="383.42854457140663" />
+      <entry key="H4" value="415.6532277989863" />
+      <entry key="D1" value="569.955204307433" />
+      <entry key="W1" value="738.065095298458" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -407,7 +401,15 @@
       <option name="project" value="LOCAL" />
       <updated>1786570359154</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Implemented added centralized banking configuration">
+      <option name="closed" value="true" />
+      <created>1787080289582</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1787080289582</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -427,6 +429,7 @@
     <MESSAGE value="Implemented feature for handling customer not found in account service" />
     <MESSAGE value="Implemented feature added api gateway routes for customer and account services" />
     <MESSAGE value="Implemented feature added account customer lookup via feign, Added an endpoint to retrieve customer details associated with an account." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented feature added account customer lookup via feign, Added an endpoint to retrieve customer details associated with an account." />
+    <MESSAGE value="Implemented added centralized banking configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented added centralized banking configuration" />
   </component>
 </project>
