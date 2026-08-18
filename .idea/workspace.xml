@@ -7,11 +7,12 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef29304e-ea74-41d4-86af-9fa65441aef5" name="Changes" comment="Implemented feature added api gateway routes for customer and account services">
+    <list default="true" id="ef29304e-ea74-41d4-86af-9fa65441aef5" name="Changes" comment="Implemented feature added account customer lookup via feign, Added an endpoint to retrieve customer details associated with an account.">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/bank/account/controller/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/bank/account/controller/AccountController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/bank/account/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/bank/account/service/AccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/bank/account/service/impl/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/bank/account/service/impl/AccountServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +25,9 @@
       <entry key="_D:/Java/banking-microservice/customer-service" value="3GzLFFT0jlXD4A7c0ud8EScYzUC" />
       <entry key="_D:/Java/customer-service" value="3FyBlECLJbdhaF1VTiD1xkXhUNa" />
     </persistenceIdMap>
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="72" />
   </component>
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
@@ -61,6 +65,9 @@
     &quot;accountId&quot;: &quot;21503b93-73fc-4438-997b-d2941a97001d&quot;
   }
 }</component>
+  <component name="LLMProjectSettings">
+    <option name="turned_on" value="false" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -74,23 +81,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0" />
-      <entry key="S10" value="1.0" />
-      <entry key="S30" value="1.0000000207390018" />
-      <entry key="S60" value="1.0003219581515834" />
-      <entry key="M2" value="1.0401204197507643" />
-      <entry key="M5" value="1.7313751820425232" />
-      <entry key="M10" value="3.1558776626546843" />
-      <entry key="M15" value="4.5127182542055335" />
-      <entry key="M30" value="7.746157986968177" />
-      <entry key="H1" value="11.200029054689947" />
-      <entry key="H2" value="14.377624638004342" />
-      <entry key="H4" value="18.971065908119396" />
-      <entry key="D1" value="113.43558561902601" />
-      <entry key="W1" value="223.85378829250428" />
+      <entry key="MS100" value="1.3186401568298156" />
+      <entry key="MS500" value="1.7955364837549186" />
+      <entry key="S2" value="1.9444196733550676" />
+      <entry key="S5" value="1.9773857867831115" />
+      <entry key="S10" value="1.9900067587680863" />
+      <entry key="S30" value="5.101198281887188" />
+      <entry key="S60" value="24.674428914752724" />
+      <entry key="M2" value="63.89678025226945" />
+      <entry key="M5" value="120.27133594052094" />
+      <entry key="M10" value="175.8918643258134" />
+      <entry key="M15" value="218.47120346489896" />
+      <entry key="M30" value="293.67319474008184" />
+      <entry key="H1" value="353.5335243166242" />
+      <entry key="H2" value="392.80119783421355" />
+      <entry key="H4" value="417.8419085929713" />
+      <entry key="D1" value="529.736024460032" />
+      <entry key="W1" value="644.7457575548407" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -98,37 +105,37 @@
       <entry key="S2" value="0.0" />
       <entry key="S5" value="0.0" />
       <entry key="S10" value="0.0" />
-      <entry key="S30" value="4.253804334386341E-217" />
-      <entry key="S60" value="9.213711770691131E-109" />
-      <entry key="M2" value="1.3571092300700192E-54" />
-      <entry key="M5" value="4.301656266208677E-22" />
-      <entry key="M10" value="2.933108624205606E-11" />
-      <entry key="M15" value="1.1982875616640997E-7" />
-      <entry key="M30" value="4.895476850323018E-4" />
-      <entry key="H1" value="0.03129332417650953" />
-      <entry key="H2" value="0.2585472859016892" />
-      <entry key="H4" value="1.2415919621832576" />
-      <entry key="D1" value="38.58064778149071" />
-      <entry key="W1" value="89.86170836931869" />
+      <entry key="S30" value="5.175147048472552E-240" />
+      <entry key="S60" value="3.213713926481794E-120" />
+      <entry key="M2" value="2.534551385446833E-60" />
+      <entry key="M5" value="2.1986202449154313E-24" />
+      <entry key="M10" value="2.096937112587869E-12" />
+      <entry key="M15" value="2.0641086673882247E-8" />
+      <entry key="M30" value="2.0317990564505618E-4" />
+      <entry key="H1" value="0.0201601879046544" />
+      <entry key="H2" value="0.20752069890753017" />
+      <entry key="H4" value="1.1123452677317547" />
+      <entry key="D1" value="37.880261507161656" />
+      <entry key="W1" value="89.62682690767343" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.005048253244677701" />
-      <entry key="MS500" value="0.3472387839412776" />
-      <entry key="S2" value="0.7676390453239342" />
-      <entry key="S5" value="0.8996277073361975" />
-      <entry key="S10" value="0.9484870622924687" />
-      <entry key="S30" value="0.9825254598864005" />
-      <entry key="S60" value="0.9915460198833469" />
-      <entry key="M2" value="1.0357134593484814" />
-      <entry key="M5" value="1.7295456475931485" />
-      <entry key="M10" value="3.1549040700631465" />
-      <entry key="M15" value="4.512041214458739" />
-      <entry key="M30" value="7.746283200759489" />
-      <entry key="H1" value="11.231110954344697" />
-      <entry key="H2" value="14.635992710455245" />
-      <entry key="H4" value="20.21238261919042" />
-      <entry key="D1" value="152.01491909331816" />
-      <entry key="W1" value="313.7150652171508" />
+      <entry key="MS100" value="1.2737224322610747" />
+      <entry key="MS500" value="1.783133807300413" />
+      <entry key="S2" value="1.941053168515632" />
+      <entry key="S5" value="1.9760156422740929" />
+      <entry key="S10" value="1.989315640991296" />
+      <entry key="S30" value="5.099223151333632" />
+      <entry key="S60" value="24.667814808564646" />
+      <entry key="M2" value="63.887796861718066" />
+      <entry key="M5" value="120.2646367241428" />
+      <entry key="M10" value="175.8873708635199" />
+      <entry key="M15" value="218.4677024369934" />
+      <entry key="M30" value="293.67121374541284" />
+      <entry key="H1" value="353.55240787868775" />
+      <entry key="H2" value="393.00796653508087" />
+      <entry key="H4" value="418.9536926515113" />
+      <entry key="D1" value="567.6149415228035" />
+      <entry key="W1" value="734.3721463921107" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -185,7 +192,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.build.tools.auto.reload": "SELECTIVE",
-    "settings.editor.selected.configurable": "build.tools"
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -392,7 +399,15 @@
       <option name="project" value="LOCAL" />
       <updated>1786569012309</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Implemented feature added account customer lookup via feign, Added an endpoint to retrieve customer details associated with an account.">
+      <option name="closed" value="true" />
+      <created>1786570359154</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1786570359154</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -411,6 +426,7 @@
     <MESSAGE value="Implemented feature Eureka Service Discovery,OpenFeign Service Communication between services" />
     <MESSAGE value="Implemented feature for handling customer not found in account service" />
     <MESSAGE value="Implemented feature added api gateway routes for customer and account services" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented feature added api gateway routes for customer and account services" />
+    <MESSAGE value="Implemented feature added account customer lookup via feign, Added an endpoint to retrieve customer details associated with an account." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented feature added account customer lookup via feign, Added an endpoint to retrieve customer details associated with an account." />
   </component>
 </project>
