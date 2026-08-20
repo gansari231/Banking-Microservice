@@ -11,6 +11,7 @@ import com.bank.account.repository.AccountRepository;
 import com.bank.account.service.AccountService;
 import feign.FeignException;
 import org.springframework.stereotype.Service;
+import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 
 import java.util.List;
 
@@ -70,11 +71,23 @@ public class AccountServiceImpl implements AccountService {
     }
 
     @Override
+    @CircuitBreaker(name = "customerService", fallbackMethod = "customerFallback")
     public CustomerResponse getAccountCustomer(Long accountId) {
 
         Account account = accountRepository.findById(accountId)
                 .orElseThrow(() -> new AccountNotFoundException("Account with ID " + accountId + " not found."));
 
         return customerClient.getCustomerById(account.getCustomerId());
+    }
+
+    private CustomerResponse customerFallback(Long accountId, Exception ex) {
+
+        return CustomerResponse.builder()
+                .id(-1L)
+                .name("Customer Service")
+                .email("N/A")
+                .phone("N/A")
+                .address("Fallback Response")
+                .build();
     }
 }

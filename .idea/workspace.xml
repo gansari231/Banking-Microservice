@@ -10,7 +10,7 @@
     <list default="true" id="ef29304e-ea74-41d4-86af-9fa65441aef5" name="Changes" comment="feature integrated account service with config server">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/account-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/bank/account/service/impl/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/bank/account/service/impl/AccountServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,61 +79,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0002246551881409" />
-      <entry key="MS500" value="1.186338798349865" />
-      <entry key="S2" value="1.6570158135746853" />
-      <entry key="S5" value="1.8453378774563514" />
-      <entry key="S10" value="1.9194225782828869" />
-      <entry key="S30" value="1.9723853112762786" />
-      <entry key="S60" value="1.9862388740884427" />
-      <entry key="M2" value="2.062356191771937" />
-      <entry key="M5" value="9.127255258468232" />
-      <entry key="M10" value="44.749849305035745" />
-      <entry key="M15" value="87.28973224039267" />
-      <entry key="M30" value="186.5181336286695" />
-      <entry key="H1" value="284.05013865342397" />
-      <entry key="H2" value="355.2028910277829" />
-      <entry key="H4" value="400.8697216251956" />
-      <entry key="D1" value="532.3370998580507" />
-      <entry key="W1" value="651.8043666442833" />
+      <entry key="MS100" value="1.1018780378018015E-5" />
+      <entry key="MS500" value="0.12095280046711211" />
+      <entry key="S2" value="0.9363289506021547" />
+      <entry key="S5" value="1.4686442713599377" />
+      <entry key="S10" value="1.7123437732479585" />
+      <entry key="S30" value="1.8987387462697551" />
+      <entry key="S60" value="1.9488041874834956" />
+      <entry key="M2" value="2.0428291116390445" />
+      <entry key="M5" value="9.092588603610025" />
+      <entry key="M10" value="44.66478520945792" />
+      <entry key="M15" value="87.17907895864023" />
+      <entry key="M30" value="186.3998757995656" />
+      <entry key="H1" value="283.96007642133264" />
+      <entry key="H2" value="355.1465754394193" />
+      <entry key="H4" value="400.8379424510002" />
+      <entry key="D1" value="532.3300660715348" />
+      <entry key="W1" value="651.8031363071453" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="0.0" />
-      <entry key="S5" value="0.0" />
-      <entry key="S10" value="0.0" />
-      <entry key="S30" value="1.022383880420328E-252" />
-      <entry key="S60" value="1.4284099419133343E-126" />
-      <entry key="M2" value="1.6897557200953888E-63" />
-      <entry key="M5" value="1.1795581415464528E-25" />
-      <entry key="M10" value="4.857020886530555E-13" />
-      <entry key="M15" value="7.784945934494595E-9" />
-      <entry key="M30" value="1.2477922271379746E-4" />
-      <entry key="H1" value="0.015798844933659285" />
-      <entry key="H2" value="0.1837074639341141" />
-      <entry key="H4" value="1.0465796880578078" />
-      <entry key="D1" value="37.497451338689395" />
-      <entry key="W1" value="89.49687005908267" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0" />
+      <entry key="S30" value="1.0" />
+      <entry key="S60" value="1.0" />
+      <entry key="M2" value="1.0" />
+      <entry key="M5" value="1.0" />
+      <entry key="M10" value="1.0000000000004847" />
+      <entry key="M15" value="1.0000000077750772" />
+      <entry key="M30" value="1.0001247001091194" />
+      <entry key="H1" value="1.0157938356798497" />
+      <entry key="H2" value="1.18367833806217" />
+      <entry key="H4" value="2.046496719860356" />
+      <entry key="D1" value="38.496955883708566" />
+      <entry key="W1" value="90.49670112599692" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9397367642826924" />
-      <entry key="MS500" value="1.1721401621557266" />
-      <entry key="S2" value="1.6523095123763345" />
-      <entry key="S5" value="1.8432710674422077" />
-      <entry key="S10" value="1.9183529419545202" />
-      <entry key="S30" value="1.972020133359054" />
-      <entry key="S60" value="1.9860551442581325" />
-      <entry key="M2" value="2.0622557561825166" />
-      <entry key="M5" value="9.126833454072948" />
-      <entry key="M10" value="44.74875105529878" />
-      <entry key="M15" value="87.2883616926642" />
-      <entry key="M30" value="186.51688337891576" />
-      <entry key="H1" value="284.0649173793109" />
-      <entry key="H2" value="355.38592213278713" />
-      <entry key="H4" value="401.9157677384495" />
-      <entry key="D1" value="569.8332193828422" />
-      <entry key="W1" value="741.300799130759" />
+      <entry key="MS100" value="2.1368732800110746E-5" />
+      <entry key="MS500" value="0.22145986963021091" />
+      <entry key="S2" value="1.4987389752412354" />
+      <entry key="S5" value="2.2628667715195827" />
+      <entry key="S10" value="2.603503545720606" />
+      <entry key="S30" value="2.8610483710462975" />
+      <entry key="S60" value="2.929776898993351" />
+      <entry key="M2" value="3.0332612916099295" />
+      <entry key="M5" value="10.088370254543914" />
+      <entry key="M10" value="45.66178816731658" />
+      <entry key="M15" value="88.17644249310777" />
+      <entry key="M30" value="187.39799231391686" />
+      <entry key="H1" value="284.97453339684984" />
+      <entry key="H2" value="356.3294189809368" />
+      <entry key="H4" value="402.88382636278976" />
+      <entry key="D1" value="570.8256769459119" />
+      <entry key="W1" value="742.2993979737747" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -201,7 +201,7 @@
       <recent name="D:\Java\customer-service\customer-service" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ApiGatewayApplication">
+  <component name="RunManager" selected="Spring Boot.CustomerServiceApplication">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="banking-microservice" />
       <method v="2">
@@ -285,11 +285,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.ApiGatewayApplication" />
         <item itemvalue="Spring Boot.CustomerServiceApplication" />
+        <item itemvalue="Spring Boot.ApiGatewayApplication" />
         <item itemvalue="Spring Boot.AccountServiceApplication" />
-        <item itemvalue="Spring Boot.ConfigServerApplication" />
         <item itemvalue="Spring Boot.RegistryApplication" />
+        <item itemvalue="Spring Boot.ConfigServerApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -445,11 +445,30 @@
       <option name="project" value="LOCAL" />
       <updated>1787165853653</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="feature integrated account service with config server">
+      <option name="closed" value="true" />
+      <created>1787264634582</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1787264634582</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Refactored customer-service made use DTOs and mapper for customer API&quot;" />
@@ -467,6 +486,7 @@
     <MESSAGE value="Implemented feature added account customer lookup via feign, Added an endpoint to retrieve customer details associated with an account." />
     <MESSAGE value="Implemented added centralized banking configuration" />
     <MESSAGE value="feature integrated customer service with config server" />
-    <option name="LAST_COMMIT_MESSAGE" value="feature integrated customer service with config server" />
+    <MESSAGE value="feature integrated account service with config server" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature integrated account service with config server" />
   </component>
 </project>
