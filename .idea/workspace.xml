@@ -7,13 +7,10 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef29304e-ea74-41d4-86af-9fa65441aef5" name="Changes" comment="Implemented added centralized banking configuration">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="ef29304e-ea74-41d4-86af-9fa65441aef5" name="Changes" comment="feature integrated account service with config server">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/bank/customer/CustomerServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/bank/customer/CustomerServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,23 +79,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.5625292423444046" />
-      <entry key="MS500" value="1.8913104958969713" />
-      <entry key="S2" value="1.9716441834078204" />
-      <entry key="S5" value="1.9885597050562593" />
-      <entry key="S10" value="1.99435932068966" />
-      <entry key="S30" value="2.071872061342976" />
-      <entry key="S60" value="2.7462428535319177" />
-      <entry key="M2" value="10.654551723019514" />
-      <entry key="M5" value="55.244311539016834" />
-      <entry key="M10" value="119.13712848366522" />
-      <entry key="M15" value="168.78719896405636" />
-      <entry key="M30" value="259.1065044033984" />
-      <entry key="H1" value="333.51781045242046" />
-      <entry key="H2" value="383.2289120929675" />
-      <entry key="H4" value="414.56078371097294" />
-      <entry key="D1" value="532.1868941853473" />
-      <entry key="W1" value="648.4761404078037" />
+      <entry key="MS100" value="1.0002246551881409" />
+      <entry key="MS500" value="1.186338798349865" />
+      <entry key="S2" value="1.6570158135746853" />
+      <entry key="S5" value="1.8453378774563514" />
+      <entry key="S10" value="1.9194225782828869" />
+      <entry key="S30" value="1.9723853112762786" />
+      <entry key="S60" value="1.9862388740884427" />
+      <entry key="M2" value="2.062356191771937" />
+      <entry key="M5" value="9.127255258468232" />
+      <entry key="M10" value="44.749849305035745" />
+      <entry key="M15" value="87.28973224039267" />
+      <entry key="M30" value="186.5181336286695" />
+      <entry key="H1" value="284.05013865342397" />
+      <entry key="H2" value="355.2028910277829" />
+      <entry key="H4" value="400.8697216251956" />
+      <entry key="D1" value="532.3370998580507" />
+      <entry key="W1" value="651.8043666442833" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -106,37 +103,37 @@
       <entry key="S2" value="0.0" />
       <entry key="S5" value="0.0" />
       <entry key="S10" value="0.0" />
-      <entry key="S30" value="1.1385130338805023E-243" />
-      <entry key="S60" value="4.766667634821809E-122" />
-      <entry key="M2" value="3.086774675914061E-61" />
-      <entry key="M5" value="9.470910964965786E-25" />
-      <entry key="M10" value="1.3762780128623719E-12" />
-      <entry key="M15" value="1.558881373678497E-8" />
-      <entry key="M30" value="1.765716638837915E-4" />
-      <entry key="H1" value="0.018793804431562405" />
-      <entry key="H2" value="0.20036482674427292" />
-      <entry key="H4" value="1.0929986950147472" />
-      <entry key="D1" value="37.769651169678525" />
-      <entry key="W1" value="89.58939285372153" />
+      <entry key="S30" value="1.022383880420328E-252" />
+      <entry key="S60" value="1.4284099419133343E-126" />
+      <entry key="M2" value="1.6897557200953888E-63" />
+      <entry key="M5" value="1.1795581415464528E-25" />
+      <entry key="M10" value="4.857020886530555E-13" />
+      <entry key="M15" value="7.784945934494595E-9" />
+      <entry key="M30" value="1.2477922271379746E-4" />
+      <entry key="H1" value="0.015798844933659285" />
+      <entry key="H2" value="0.1837074639341141" />
+      <entry key="H4" value="1.0465796880578078" />
+      <entry key="D1" value="37.497451338689395" />
+      <entry key="W1" value="89.49687005908267" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.5026315505882935" />
-      <entry key="MS500" value="1.8768704953178383" />
-      <entry key="S2" value="1.9678846293407855" />
-      <entry key="S5" value="1.9870432943066718" />
-      <entry key="S10" value="1.9935988110415697" />
-      <entry key="S30" value="2.071571604461786" />
-      <entry key="S60" value="2.7458967068192726" />
-      <entry key="M2" value="10.65325547884786" />
-      <entry key="M5" value="55.241309121973885" />
-      <entry key="M10" value="119.13411276294178" />
-      <entry key="M15" value="168.78450847759098" />
-      <entry key="M30" value="259.10475856143177" />
-      <entry key="H1" value="333.535401737" />
-      <entry key="H2" value="383.42854457140663" />
-      <entry key="H4" value="415.6532277989863" />
-      <entry key="D1" value="569.955204307433" />
-      <entry key="W1" value="738.065095298458" />
+      <entry key="MS100" value="0.9397367642826924" />
+      <entry key="MS500" value="1.1721401621557266" />
+      <entry key="S2" value="1.6523095123763345" />
+      <entry key="S5" value="1.8432710674422077" />
+      <entry key="S10" value="1.9183529419545202" />
+      <entry key="S30" value="1.972020133359054" />
+      <entry key="S60" value="1.9860551442581325" />
+      <entry key="M2" value="2.0622557561825166" />
+      <entry key="M5" value="9.126833454072948" />
+      <entry key="M10" value="44.74875105529878" />
+      <entry key="M15" value="87.2883616926642" />
+      <entry key="M30" value="186.51688337891576" />
+      <entry key="H1" value="284.0649173793109" />
+      <entry key="H2" value="355.38592213278713" />
+      <entry key="H4" value="401.9157677384495" />
+      <entry key="D1" value="569.8332193828422" />
+      <entry key="W1" value="741.300799130759" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -168,35 +165,35 @@
     <option name="showMembers" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "Spring Boot.AccountServiceApplication.executor": "Run",
-    "Spring Boot.ApiGatewayApplication.executor": "Run",
-    "Spring Boot.ConfigServerApplication.executor": "Run",
-    "Spring Boot.CustomerServiceApplication.executor": "Run",
-    "Spring Boot.RegistryApplication.executor": "Run",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "copilot.chat.legacySessionMetadata.migrated": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Java/banking-microservice",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.jshint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.jshint": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.build.tools.auto.reload": "SELECTIVE",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;Spring Boot.AccountServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ApiGatewayApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ConfigServerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.CustomerServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.RegistryApplication.executor&quot;: &quot;Run&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;copilot.chat.legacySessionMetadata.migrated&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Java/banking-microservice&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.build.tools.auto.reload&quot;: &quot;SELECTIVE&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Java\banking-microservice\account-service\src\main\java\com\bank\account" />
@@ -204,7 +201,7 @@
       <recent name="D:\Java\customer-service\customer-service" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.CustomerServiceApplication">
+  <component name="RunManager" selected="Spring Boot.ApiGatewayApplication">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="banking-microservice" />
       <method v="2">
@@ -288,11 +285,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.ApiGatewayApplication" />
         <item itemvalue="Spring Boot.CustomerServiceApplication" />
+        <item itemvalue="Spring Boot.AccountServiceApplication" />
         <item itemvalue="Spring Boot.ConfigServerApplication" />
         <item itemvalue="Spring Boot.RegistryApplication" />
-        <item itemvalue="Spring Boot.ApiGatewayApplication" />
-        <item itemvalue="Spring Boot.AccountServiceApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -440,7 +437,15 @@
       <option name="project" value="LOCAL" />
       <updated>1787080750562</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="feature integrated customer service with config server">
+      <option name="closed" value="true" />
+      <created>1787165853653</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1787165853653</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -461,6 +466,7 @@
     <MESSAGE value="Implemented feature added api gateway routes for customer and account services" />
     <MESSAGE value="Implemented feature added account customer lookup via feign, Added an endpoint to retrieve customer details associated with an account." />
     <MESSAGE value="Implemented added centralized banking configuration" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented added centralized banking configuration" />
+    <MESSAGE value="feature integrated customer service with config server" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature integrated customer service with config server" />
   </component>
 </project>
